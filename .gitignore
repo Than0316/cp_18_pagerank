@@ -216,3 +216,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+*.bz2
+simplewiki-latest-pages-articles.xml.bz2
