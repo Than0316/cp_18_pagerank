@@ -7,7 +7,7 @@ Output files (written next to this script):
   categories.json  — dict mapping node index (as string) to list of category names
 
 Usage:
-  python parse_wiki.py
+  python -m graph.parser
 """
 
 import bz2
@@ -21,7 +21,7 @@ from xml.etree.ElementTree import iterparse
 import numpy as np
 
 # ── paths ─────────────────────────────────────────────────────────────────────
-HERE   = Path(__file__).parent
+HERE   = Path(__file__).parent.parent
 DUMP   = HERE / "simplewiki-latest-pages-articles.xml.bz2"
 DATA   = HERE / "data"
 TITLES = DATA / "titles.txt"
