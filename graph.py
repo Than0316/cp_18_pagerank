@@ -87,4 +87,4 @@ if __name__ == "__main__":
     # example
     i = titles.index("April")
     targets = edges[edges[:, 0] == i, 1]
-    print(f"Outlinks of 'April': {[titles[t] for t in targets[:6]]} ...")
+    print(f"Outlinks of 'April': {[titles[t] for t in targets]} ...")
