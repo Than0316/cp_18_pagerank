@@ -51,7 +51,7 @@ DATA = Path(__file__).parent / "data"
 
 def load(data_dir: Path = DATA):
     titles   = (data_dir / "titles.txt").read_text(encoding="utf-8").splitlines()
-    edges    = np.load(data_dir / "edges.npy")                  # (E, 2) int32
+    edges    = np.load(data_dir / "edges_dedup.npy")                  # (E, 2) int32
     raw_cats = json.loads((data_dir / "categories.json").read_text(encoding="utf-8"))
 
     n = len(titles)
