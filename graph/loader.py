@@ -10,7 +10,7 @@ Use titles[i] to get the page name for index i.
 
 """
 Usage:
-    from graph import load
+    from graph.loader import load
     titles, edges, out_degree, dangling, categories = load()
 
 ──────────────────────────────────────────────────────────────
@@ -46,7 +46,7 @@ import json
 from pathlib import Path
 import numpy as np
 
-DATA = Path(__file__).parent / "data"
+DATA = Path(__file__).parent.parent / "data"
 
 
 def load(data_dir: Path = DATA):

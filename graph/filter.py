@@ -10,7 +10,7 @@ import argparse
 import numpy as np
 from pathlib import Path
 
-DATA = Path(__file__).parent / "data"
+DATA = Path(__file__).parent.parent / "data"
 
 
 def filter_duplicates(data_dir: Path = DATA, drop_self_loops: bool = False) -> None:
